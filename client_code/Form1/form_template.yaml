@@ -1,22 +1,26 @@
 components:
 - components:
   - data_bindings: []
-    layout_properties: {grid_position: 'JRLUUI,JBYNCL EICLNU,MSWFYV'}
+    event_bindings: {}
+    layout_properties: {full_width_row: true, grid_position: 'JRLUUI,JBYNCL EICLNU,MSWFYV', row_background: ''}
     name: text_box_1
-    properties: {text: 'Message '}
+    properties: {spacing_above: large, spacing_below: large, text: ''}
     type: TextBox
   - data_bindings: []
+    event_bindings: {click: button_1_click, show: button_1_show}
     layout_properties: {grid_position: 'JRLUUI,JBYNCL EICLNU,TRDBWT'}
     name: button_1
     properties: {font: '', icon: 'fa:file-image-o', text: 'Add a image '}
     type: Button
-  - layout_properties: {grid_position: 'JRLUUI,APOQGM'}
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'JRLUUI,APOQGM'}
     name: button_2
     properties: {align: center, icon: 'fa:arrow-up', italic: false, text: Submit}
     type: Button
-  - layout_properties: {grid_position: 'JRLUUI,JBYNCL SONHPI,OHYYKZ'}
+  - data_bindings: []
+    layout_properties: {full_width_row: true, grid_position: 'ETADBG,SNUZMA'}
     name: label_2
-    properties: {text: 'Response from AI '}
+    properties: {align: center, bold: false, text: 'Response from AI '}
     type: Label
   layout_properties: {slot: default}
   name: content_panel
